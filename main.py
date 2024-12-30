@@ -29,7 +29,7 @@ class Data(BaseModel):
 path = "model/encoder.pkl" # TODO: enter the path for the saved encoder 
 encoder = load_model(path)
 
-path = "model/emodel.pkl"# TODO: enter the path for the saved model 
+path = "model/model.pkl"# TODO: enter the path for the saved model 
 model = load_model(path)
 
 # TODO: create a RESTful API using FastAPI
