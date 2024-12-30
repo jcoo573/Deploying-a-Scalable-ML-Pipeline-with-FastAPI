@@ -64,10 +64,10 @@ async def post_inference(data: Data):
         "native-country",
     ]
     data_processed, _, _, _ = process_data(
-        # your code here
-        # use data as data input
-        # use training = False
-        # do not need to pass lb as input
+        data,  # Pass the input data (already cleaned and converted to a DataFrame)
+        categorical_features=cat_features,  # List of categorical features
+        training=False,  # Specify that this is for inference, not training
+        encoder=encoder  # Use the preloaded encoder
     )
     _inference = inference(model, data_processed) # your code here to predict the result using data_processed
     return {"result": apply_label(_inference)}
