@@ -4,7 +4,7 @@ venv/
 .venv/
 fastapi/lib/
 lib/
-
+python3.12/
 
 
 # Ignore compiled Python files
@@ -17,3 +17,4 @@ __pycache__/
 # Ignore system files
 .DS_Store
 Thumbs.db
+
