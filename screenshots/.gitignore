@@ -3,6 +3,8 @@ env/
 venv/
 .venv/
 fastapi/lib/
+lib/
+
 
 # Ignore compiled Python files
 *.pyc
